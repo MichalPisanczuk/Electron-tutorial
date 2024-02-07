@@ -1,0 +1,13 @@
+<div class="menu" [ngClass]="{menuHidden: toggle}">
+    <div class="toggleMenu">
+        <button class="toggle-btn" (click)="onToggle()"><img [ngClass]="{rotatebtn: toggle}" src="../../../assets/images/icons/chevron-back-circle-outline.svg" alt=""></button>
+    </div>
+  <ul>
+    <li *ngIf="!toggle" routerLink="/first">Recycler</li>
+    <li *ngIf="toggle" routerLink="/first"><img src="../../../assets/images/icons/settings-outline.svg" alt=""></li>
+    <li *ngIf="!toggle" routerLink="/second">Status</li>
+    <li *ngIf="toggle" routerLink="/second"><img src="../../../assets/images/icons/list-circle-outline.svg" alt=""></li>
+    <li *ngIf="!toggle" routerLink="/help">Help</li>
+    <li *ngIf="toggle" routerLink="/help"><img src="../../../assets/images/icons/help-circle-outline.svg" alt=""></li>
+  </ul>
+</div>

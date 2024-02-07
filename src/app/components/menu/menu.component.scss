@@ -1,0 +1,52 @@
+.menu {
+    width: 260px;
+    background-color: #272C36;
+    transition: .5s;
+    height: 100%;
+    .toggleMenu {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: #cccccc;
+            text-align: right;
+            margin: 10px;
+            cursor: pointer;
+            img {
+                width: 30px;
+                height: 30px;
+                transition: 1s;
+            }
+            .rotatebtn {
+                transform: rotate(180deg);
+                transition: 1s;
+            }
+        }
+    }
+  ul {
+    padding: 20px;
+    li {
+      list-style: none;
+      margin: 5px 0;
+      color: #9d9d9d;
+      cursor: pointer;
+      transition: 0.3s;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-left: -10px;
+        margin-bottom: 10px;
+      }
+    }
+    li:hover {
+      color: #cccccc;
+      transition: 0.3s;
+    }
+  }
+}
+.menuHidden {
+    width: 50px;
+    transition: .5s;
+}
